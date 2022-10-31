@@ -1,0 +1,51 @@
+@use "components";
+
+body {
+    border: 0;
+    padding: 0;
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    border-bottom: solid 1px #ddd;
+}
+
+.container {
+    max-width: 816px;
+    margin: 0 auto;
+}
+
+.logo {
+    max-width: 1rem;
+    color: components.$color-main;
+    font-weight: 700;
+    a {
+        img {
+            max-width: 6rem;
+        }
+    }
+}
+
+.sec-home {
+    display: flex;
+    .home-cta {
+        a {
+            text-decoration: none;
+        }
+        flex-grow: 1;
+        .cta-text {
+            color: components.$color-main;
+        }
+        .home-title {
+            width: 22rem;
+            font-size: 4rem;
+        }
+        .home-description {
+            width: 22rem;
+            font-weight: 500;
+        }
+    }
+}
