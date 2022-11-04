@@ -49,3 +49,40 @@ body {
         }
     }
 }
+
+.sec-features {
+    text-align: center;
+    h3 {
+        font-size: 2.2rem;
+    }
+    p {
+        color: components.$color-gray;
+    }
+    .features-and-image {
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        .features {
+            display: flex;
+            flex-direction: column;
+            .feature {
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+                align-items: flex-start;
+                .description {
+                    text-align: left;
+                }
+                .title {
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                }
+                .text {
+                    font-size: 1rem;
+                    font-weight: 400;
+                }
+            }
+        }
+        .image {
+        }
+    }
+}

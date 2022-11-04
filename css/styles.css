@@ -44,9 +44,10 @@
 }
 
 .icon-sm {
-  padding: 0.35rem 0.5rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2509803922);
+  color: #0459c2;
 }
 
 .feature {
@@ -132,6 +133,41 @@ body {
 .sec-home .home-cta .home-description {
   width: 22rem;
   font-weight: 500;
+}
+
+.sec-features {
+  text-align: center;
+}
+.sec-features h3 {
+  font-size: 2.2rem;
+}
+.sec-features p {
+  color: #888;
+}
+.sec-features .features-and-image {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+}
+.sec-features .features-and-image .features {
+  display: flex;
+  flex-direction: column;
+}
+.sec-features .features-and-image .features .feature {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.sec-features .features-and-image .features .feature .description {
+  text-align: left;
+}
+.sec-features .features-and-image .features .feature .title {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.sec-features .features-and-image .features .feature .text {
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=styles.css.map */
